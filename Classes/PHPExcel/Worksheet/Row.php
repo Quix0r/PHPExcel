@@ -83,4 +83,15 @@ class PHPExcel_Worksheet_Row
     {
         return new PHPExcel_Worksheet_RowCellIterator($this->parent, $this->rowIndex, $startColumn, $endColumn);
     }
+
+    /**
+     * Returns bound worksheet
+     *
+     * @return PHPExcel_Worksheet
+     */
+    public function getWorksheet()
+    {
+        return $this->parent;
+    }
+
 }
